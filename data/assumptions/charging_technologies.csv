@@ -1,0 +1,6 @@
+tech,output,description,capex_2024,capex_2030,capex_2040,capex_2050,fom_frac,life_yr,wacc,efficiency,src,confidence,note
+CHGT_HOME,CHG_HOME,Residential / workplace AC charging (incl. 2W sockets),150,130,100,100,0.02,10,0.12,0.90,EPRA_EVGUIDE2025;MODELLER,C,US$ per kW; includes metering and installation
+CHGT_DEPOT,CHG_DEPOT,Fleet depot charging (buses / matatus / trucks / LCVs),300,250,200,190,0.03,12,0.12,0.93,BASIGO2026;MODELLER,C,US$ per kW
+CHGT_SWAP,CHG_SWAP,Battery-swap stations incl. swap-battery inventory (~1.6 packs per vehicle),1500,1000,750,700,0.05,8,0.14,0.90,BNEF2025;MOGO_BODA;MODELLER,C,US$ per kW of station charging power; battery inventory at BNEF LFP pack prices
+CHGT_FAST,CHG_FAST,Public DC fast / corridor megawatt charging,600,500,400,380,0.05,10,0.12,0.93,EPRA_EVGUIDE2025;MODELLER,C,US$ per kW; EPRA guideline: highway charger every 100 km
+V2G_DEPOT,ELC003,Vehicle-to-grid discharge from parked depot fleets (bidirectional chargers),150,130,110,100,0.03,10,0.12,0.90,MODELLER,C,Active only in V2G scenario; capacity bounded by parked fleet battery power (UDC)

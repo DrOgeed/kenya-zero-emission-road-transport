@@ -1,0 +1,42 @@
+source_id,citation,url,accessed
+PSM_V3,"Kihara M., Lubello P., Millot A. et al. OSeMOSYS Kenya Power System Model v3.0.0 (Climate Compatible Growth, 2026). Data CC BY 4.0; model Apache-2.0. Commit e5e6fdb.",https://github.com/ClimateCompatibleGrowth/osemosys_kenya_psm,2026-11-25
+KIHARA2024,"Kihara M. et al. (2024). Mid- to long-term capacity planning for a reliable power system in Kenya. Energy Strategy Reviews 52, 101312.",https://doi.org/10.1016/j.esr.2024.101312,2026-11-25
+MILLOT2024,"Millot A. et al. (2024). The map behind the roadmap: a geospatial energy model for utility-scale solar and wind buildout in Kenya. Cell Reports Sustainability 1, 100222.",https://doi.org/10.1016/j.crsus.2024.100222,2026-11-25
+MUIO57,"UN DESA / OSeMOSYS community. Modelling User Interface for OSeMOSYS (MUIO) v5.7, model file model.v.5.7.txt. Apache-2.0.",https://github.com/OSeMOSYS/MUIO/releases/tag/v5.7,2026-11-25
+HOWELLS2011,"Howells M. et al. (2011). OSeMOSYS: The Open Source Energy Modeling System. Energy Policy 39(10), 5850-5870.",https://doi.org/10.1016/j.enpol.2011.06.033,2026-11-25
+KNBS_ES2025,"Kenya National Bureau of Statistics (2025). Economic Survey 2025 (popular version).",https://www.knbs.or.ke/wp-content/uploads/2025/05/2025-Economic-Survey-Popular-Version.pdf,2026-11-25
+KNBS_ES2026,"KNBS Economic Survey 2026, as reported by The Star (30 Apr 2026), 'Bikes boom drives spike in vehicle registrations'.",https://www.the-star.co.ke/news/2026-04-30-bikes-boom-drives-spike-in-vehicle-registrations,2026-11-25
+CEIC_KNBS,"CEIC Data, Kenya number of registered vehicles (source KNBS), Dec 2024.",https://www.ceicdata.com/en/indicator/kenya/number-of-registered-vehicles,2026-11-25
+GIZ2018,"GIZ / University of Nairobi (2018). Characteristics of the in-service vehicle fleet in Kenya.",https://www.changing-transport.org/wp-content/uploads/Characteristics_of_the_In-Service_vehicle_fleet_in_Kenya.pdf,2026-11-25
+MBANDI2019,"Mbandi A.M. et al. (2019). Estimating on-road vehicle fuel economy in Africa: a case study based on an urban transport survey in Nairobi, Kenya. Energies 12(6), 1177.",https://www.mdpi.com/1996-1073/12/6/1177,2026-11-25
+EMAK2026,"Electric Mobility Association of Kenya submission on Finance Bill 2026, via CleanTechnica (4 Jun 2026).",https://cleantechnica.com/2026/06/04/calls-for-policy-consistency-continuity-as-kenyas-electric-mobility-sector-highlights-milestones/,2026-11-25
+EMAK2025,"EMAK/KNBS e-motorcycle registrations 2024, via CleanTechnica (23 May 2025).",https://cleantechnica.com/2025/05/23/7-of-all-new-motorcycle-registrations-in-kenya-in-2024-were-electric/,2026-11-25
+MOT2026,"Ministry of Roads and Transport (2026). National Electric Mobility Policy launch statement.",https://transport.go.ke/kenya-launches-national-electric-mobility-policy-drive-cleaner-efficient-and-sustainable-transport,2026-11-25
+EMOB_POLICY,"Government of Kenya (2026). National Electric Mobility Policy (final).",https://www.transport.go.ke/sites/default/files/Emobility%20Policy%20Final.pdf,2026-11-25
+EPRA_EVGUIDE2025,"EPRA (2025). E-Mobility Charging and Battery Swapping Infrastructure Guidelines.",https://www.epra.go.ke/sites/default/files/2025-03/E-Mobility%20Charging%20Infrastructure%20Guidelines.pdf,2026-11-25
+EPRA_TARIFF2026,"EPRA e-mobility tariff revision, Gazette Notice 15188 (Sept 2026), via Tech-ish (25 Sep 2026).",https://tech-ish.com/2026/09/25/ev-charging-stations-in-kenya-can-now-use-unlimited-power-on-the-kes-16-e-mobility-tariff/,2026-11-25
+EPRA_PDP2025,"EPRA (2025). Petroleum Development Plan for the Medium Term Period 2025-2029.",https://www.epra.go.ke/sites/default/files/2025-10/Petroleum%20Development%20Plan%20for%20the%20Medium%20Term%20Period%202025%20to2029.pdf,2026-11-25
+EPRA_STATS2026,"EPRA Energy & Petroleum Statistics FY2025/26 (installed capacity, peak demand), via Khusoko (29 Sep 2026).",https://khusoko.com/2026/09/29/kenya-power-demand-record-2026-epra-report/,2026-11-25
+KPLC_PEAK2025,"Kenya Power (Dec 2025). Kenya Power records new peak demand at 2,439 MW.",https://newsroom.kplc.co.ke/articles/kenya-power-records-new-countrys-energy-peak-demand-at-2439-mw,2026-11-25
+BD2024_LOSSES,"Business Daily (2024). Kenya Power system losses climb (23.47% in June 2024).",https://www.businessdailyafrica.com/bd/corporate/industry/kenya-power-system-losses-climb-4798994,2026-11-25
+STAR2026_FUEL,"The Star (20 May 2026). Fuel prices: costs in one litre of petrol and diesel (EPRA breakdown).",https://www.the-star.co.ke/news/infographics/2026-05-20-fuel-prices-costs-in-one-litre-of-petrol-and-diesel,2026-11-25
+PD2026_FUEL,"People Daily (2026). Understanding fuel prices in Kenya: a breakdown of taxes, levies and duties per litre.",https://peopledaily.digital/insights/understanding-fuel-prices-in-kenya-a-breakdown-of-taxes-levies-and-duties-per-litre,2026-11-25
+BNEF2025,"BloombergNEF (Dec 2025). Lithium-ion battery pack price survey: US$108/kWh average; LFP US$81/kWh; stationary US$70/kWh.",https://dieselnet.com/news/2025/12batteries.php,2026-11-25
+MA2025,"Manufacturing Africa (Oct 2025). Attracting investment into EVs in Kenya (E2W TCO analysis).",https://manufacturingafrica.org/wp-content/uploads/2025/10/Attracting-investment-into-EVs-MA-Kenya-vsn-final-share-Oct21.pdf,2026-11-25
+UNEP_PILOT,"UNEP. Electric Motorcycle Pilot Project for Kenya (project brief).",https://www.sustmob.org/EMOB/pdf/2_3WheelerConf/UNEP%20Electric%20Motorcycle%20Pilot%20Project%20for%20Kenya.pdf,2026-11-25
+MOGO_BODA,"Mogo / Roam. Boda Boom report (operating cost of electric vs ICE motorcycles).",https://www.mogo.co.ke/esg/pdf/boda-boom-report.pdf,2026-11-25
+BASIGO2026,"BasiGo fleet and pay-as-you-drive pricing, TechTrendsKE (6 May 2026) and MIT Technology Review (6 Oct 2026).",https://techtrendske.co.ke/,2026-11-25
+INVESTKENYA2025,"Invest Kenya (2025). E-mobility Sector Investment Prospectus (CBU/CKD duty structure).",https://www.investkenya.go.ke/wp-content/uploads/2025/10/Emobility-Sector-Investment-Prospectus-1.pdf,2026-11-25
+LUKUYU2024,"Lukuyu J. et al. (2024). Managing grid impacts from increased electric vehicle adoption in African cities. Scientific Reports.",https://www.nature.com/srep/,2026-11-25
+TTCANC2025,"Northern Corridor Transit and Transport Coordination Authority. Transport Observatory Report Issue 21 (2026).",https://www.ttcanc.org/wp-content/uploads/2026/08/EN-21-TOP-Report.pdf,2026-11-25
+GIZ_NDC_TRANSPORT,"GIZ / Changing Transport (2023). IMPROVE Kenya scoping report (road transport 12.09 MtCO2e in 2019).",https://changing-transport.org/wp-content/uploads/2023_IMPROVE_Kenya_Scoping-Report.pdf,2026-11-25
+GIZ_FES2025,"GIZ / Changing Transport (2025). Fuel Economy Standards in Kenya: technical insight and policy rationale.",https://changing-transport.org/wp-content/uploads/2025_Fuel_Economy_Standards_in_Kenya_A_Technical_Insight_and_Policy_Rationale.pdf,2026-11-25
+NDC3,"Government of Kenya (2025). Nationally Determined Contribution 3.0; Climate Action Tracker assessment.",https://climateactiontracker.org/countries/kenya/2035-ndc/,2026-11-25
+IPCC2006,"IPCC (2006). Guidelines for National GHG Inventories, Vol. 2 Ch. 3 Mobile Combustion, default CO2 factors: motor gasoline 69.3 t/TJ; diesel 74.1 t/TJ.",https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,2026-11-25
+NREL_ATB2024,"NREL (2024). Annual Technology Baseline, Moderate scenario (relative cost trajectories for utility PV, land-based wind, utility battery storage).",https://atb.nrel.gov/,2026-11-25
+IEA_GEVO2025,"IEA (2025). Global EV Outlook 2025 (vehicle and battery cost trends, used to shape ZEV cost declines).",https://www.iea.org/reports/global-ev-outlook-2025,2026-11-25
+IEA_H2_2024,"IEA (2024). Global Hydrogen Review 2024 (electrolyser capex and efficiency ranges).",https://www.iea.org/reports/global-hydrogen-review-2024,2026-11-25
+UNWPP2024,"UN DESA (2024). World Population Prospects 2024, Kenya medium variant.",https://population.un.org/wpp/,2026-11-25
+IMF_WEO2025,"IMF World Economic Outlook (Oct 2025), Kenya real GDP growth projections.",https://www.imf.org/en/Publications/WEO,2026-11-25
+COSTA_RICA2020,"Godinez-Zamora G. et al. (2020). Decarbonising the transport and energy sectors: technical feasibility and socioeconomic impacts in Costa Rica. Energy Strategy Reviews 32, 100573.",https://doi.org/10.1016/j.esr.2020.100573,2026-11-25
+MODELLER,"Modeller assumption by the authors of this repository; documented in docs/ and tested in sensitivity runs.",,2026-11-25

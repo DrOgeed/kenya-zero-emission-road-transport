@@ -1,0 +1,5 @@
+tech,class,description,inputs,cap_unit,capex_2024,capex_2050,fom_frac,life_yr,wacc,energy_MJ_per_unit,residual_2024,residual_retire_year,src,confidence,note
+RAILF_DSL,RAILF,Freight rail (SGR + metre gauge) - diesel locomotives,DSL:1,Gtkm/yr,15,15,0.03,30,0.10,0.20,5.0,2050,TTCANC2025;KNBS_ES2026;MODELLER,C,Residual = 2024 haulage capability (SGR 6.5 Mt + MGR 1.0 Mt); capex M$ per Gtkm/yr of locomotive and rolling stock
+RAILF_ELC,RAILF,Freight rail - electrified (catenary on SGR),ELC002:1,Gtkm/yr,105,95,0.02,40,0.10,0.07,0,2024,MODELLER,C,Capex includes catenary + substations (~US$1.8 M/km x 480 km) and electric locomotives per Gtkm/yr
+RAILP_DSL,RAILP,Passenger rail (SGR Madaraka Express + Nairobi commuter) - diesel,DSL:1,Gpkm/yr,40,40,0.03,30,0.10,0.45,1.6,2050,KNBS_ES2026;MODELLER,C,2.7 M SGR passengers in 2025 x ~400 km + commuter rail
+RAILP_ELC,RAILP,Passenger rail - electrified (SGR + commuter EMUs),ELC002:1,Gpkm/yr,160,140,0.02,40,0.10,0.15,0,2024,MODELLER,C,

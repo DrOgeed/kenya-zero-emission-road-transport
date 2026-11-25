@@ -1,0 +1,12 @@
+commodity,description,unit,g_2025_2030,g_2031_2040,g_2041_2050,g_2051_2060,src,confidence
+P_MOTO,Motorcycle passenger-km (boda boda + private),Gpkm,0.045,0.035,0.025,0.015,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_TW3,Three-wheeler passenger-km,Gpkm,0.030,0.025,0.020,0.010,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_CAR,Car passenger-km (private + taxi/ride-hailing),Gpkm,0.050,0.055,0.045,0.030,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_MAT,14-seat matatu passenger-km,Gpkm,0.035,0.030,0.025,0.015,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_MINI,Minibus passenger-km,Gpkm,0.040,0.035,0.030,0.020,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_BUS,Large bus / BRT passenger-km,Gpkm,0.050,0.050,0.040,0.025,UNWPP2024;IMF_WEO2025;MODELLER,C
+P_RAIL,Rail passenger-km,Gpkm,0.060,0.050,0.040,0.030,KNBS_ES2026;MODELLER,C
+F_LCV,Light commercial tonne-km,Gtkm,0.050,0.045,0.035,0.025,IMF_WEO2025;MODELLER,C
+F_MDT,Medium truck tonne-km,Gtkm,0.050,0.045,0.035,0.025,IMF_WEO2025;MODELLER,C
+F_HDT,Heavy truck tonne-km,Gtkm,0.050,0.045,0.035,0.025,IMF_WEO2025;TTCANC2025;MODELLER,C
+F_RAIL,Rail tonne-km,Gtkm,0.080,0.050,0.040,0.030,TTCANC2025;KNBS_ES2026;MODELLER,C

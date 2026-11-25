@@ -1,0 +1,4 @@
+tech,output,description,cost_usd_per_GJ_2024,cost_usd_per_GJ_2030,cost_usd_per_GJ_2040,cost_usd_per_GJ_2050,co2_t_per_TJ,src,confidence,note
+IMP_PET,PET,Imported motor gasoline (landed + distribution margin; ex-tax economic cost),25.2,25.2,26.5,27.8,69.3,STAR2026_FUEL;IPCC2006;MODELLER,B,US$0.81/L at Brent ~US$80/bbl; 32.2 MJ/L; +0.5%/yr real after 2030
+IMP_DSL,DSL,Imported automotive diesel (landed + distribution margin; ex-tax economic cost),23.1,23.1,24.3,25.5,74.1,STAR2026_FUEL;IPCC2006;MODELLER,B,US$0.83/L; 35.9 MJ/L
+SUP_HVO,HVO,Hydrotreated vegetable oil / renewable diesel (import or domestic),45.0,42.0,38.0,36.0,0,MODELLER,C,Supply capped (see constants.csv); zero fossil tailpipe CO2

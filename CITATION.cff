@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this model or its data, please cite it as below, and also cite the CCG OSeMOSYS Kenya Power System Model on which the power sector is built."
+title: "KEZERT: Kenya Zero-Emission Road Transport model (OSeMOSYS / MUIO v5.7)"
+version: 1.0.0
+date-released: 2026-11-25
+license: Apache-2.0
+repository-code: "https://github.com/DrOgeed/kenya-zero-emission-road-transport"
+authors:
+  - family-names: Ogeto
+    given-names: Edwin Mwema
+    affiliation: "Universidade Federal de Viçosa"
+keywords:
+  - OSeMOSYS
+  - MUIO
+  - energy system modelling
+  - transport electrification
+  - Kenya
+  - e-mobility
+  - zero-emission vehicles
+  - power system adequacy
+references:
+  - type: software
+    title: "OSeMOSYS Kenya Power System Model v3.0.0"
+    authors:
+      - family-names: Kihara
+        given-names: Mungai
+      - family-names: Lubello
+        given-names: Pietro
+      - family-names: Millot
+        given-names: Ariane
+    repository-code: "https://github.com/ClimateCompatibleGrowth/osemosys_kenya_psm"
+    license: "CC-BY-4.0"
+  - type: article
+    title: "Mid- to long-term capacity planning for a reliable power system in Kenya"
+    journal: "Energy Strategy Reviews"
+    volume: 52
+    start: 101312
+    year: 2024
+    doi: 10.1016/j.esr.2024.101312
+    authors:
+      - family-names: Kihara
+        given-names: Mungai
+  - type: software
+    title: "MUIO - Modelling User Interface for OSeMOSYS v5.7"
+    repository-code: "https://github.com/OSeMOSYS/MUIO"
+    license: Apache-2.0
+    authors:
+      - name: "OSeMOSYS community / UN DESA"

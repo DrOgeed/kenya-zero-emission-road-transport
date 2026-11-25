@@ -1,0 +1,9 @@
+regime,charger,b1_00_06,b2_06_09,b3_09_15,b4_15_19,b5_19_21,b6_21_24,note
+unmanaged,CHGT_HOME,0.10,0.05,0.05,0.20,0.35,0.25,Plug-in on arrival home in the evening
+unmanaged,CHGT_DEPOT,0.25,0.05,0.10,0.10,0.25,0.25,Plug-in on return to depot
+unmanaged,CHGT_SWAP,0.05,0.15,0.35,0.25,0.12,0.08,Stations recharge returned packs immediately (follows riding)
+unmanaged,CHGT_FAST,0.03,0.12,0.40,0.25,0.12,0.08,Need-driven daytime charging
+tou,CHGT_HOME,0.45,0.05,0.05,0.10,0.10,0.25,>=70% in 22:00-06:00 off-peak window (EPRA_TARIFF2026 KES 8 vs 16/kWh)
+tou,CHGT_DEPOT,0.50,0.05,0.10,0.05,0.05,0.25,
+tou,CHGT_SWAP,0.25,0.10,0.25,0.15,0.10,0.15,Partial response of commercial swap operators
+tou,CHGT_FAST,0.03,0.12,0.40,0.25,0.12,0.08,Fast charging is need-driven (unchanged)

@@ -1,0 +1,16 @@
+cff-version: 2.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Lubello"
+    given-names: "Pietro"
+  - family-names: "Millot"
+    given-names: "Ariane"
+  - family-names: "Akute"
+    given-names: "Michelle"
+  - family-names: "Sterl"
+    given-names: "Sebastian"
+title: "OSeMOSYS Kenya Power System Model"
+version: 2.0.0
+doi: 
+date-released: 2024-05
+url: "https://github.com/ClimateCompatibleGrowth/osemosys_kenya_psm"

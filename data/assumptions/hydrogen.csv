@@ -1,0 +1,2 @@
+tech,description,capex_2024,capex_2030,capex_2040,capex_2050,fom_frac,life_yr,wacc,efficiency_2024,efficiency_2050,vc_usd_per_GJ_2024,vc_usd_per_GJ_2050,src,confidence,note
+H2_ELY,Grid-connected PEM/alkaline electrolysis incl. compression storage and dispensing,1400,1000,650,500,0.03,20,0.12,0.62,0.70,16.7,10.0,IEA_H2_2024;MODELLER,C,US$ per kW electric input; VC = compression/storage/dispensing (~US$2.0/kg falling to 1.2/kg)

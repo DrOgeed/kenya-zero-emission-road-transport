@@ -1,0 +1,10 @@
+class,2024,2025,2030,2035,2040,2045,2050,2060,rationale
+MOTO,0.10,0.15,0.45,0.65,0.80,0.85,0.90,0.95,E-2W already ~10-15% of new motorcycle registrations in 2025 (EMAK2026; KNBS_ES2026); TCO parity reached (MA2025)
+TW3,0.03,0.05,0.30,0.55,0.75,0.85,0.90,0.95,Follows 2W with lag
+CAR,0.01,0.01,0.05,0.15,0.30,0.45,0.60,0.80,Used-import market; limited used-EV supply and charging access
+LCV,0.01,0.01,0.05,0.15,0.30,0.45,0.60,0.80,
+MAT,0.01,0.01,0.10,0.25,0.45,0.60,0.70,0.85,SACCO finance constraints; pay-as-you-drive models emerging (BASIGO2026)
+MINI,0.02,0.03,0.15,0.30,0.50,0.65,0.75,0.90,BasiGo ~1-2% of bus registrations 2025
+BUS,0.02,0.03,0.15,0.30,0.50,0.65,0.75,0.90,
+MDT,0.00,0.00,0.03,0.10,0.25,0.40,0.50,0.70,No Kenyan e-truck evidence base
+HDT,0.00,0.00,0.01,0.05,0.15,0.25,0.35,0.55,Long-haul corridor; no charging corridor yet

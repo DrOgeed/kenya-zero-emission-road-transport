@@ -1,0 +1,21 @@
+name,value,unit,src,confidence,note
+first_year,2024,year,MODELLER,A,Base year (calibration year)
+last_year,2060,year,MODELLER,A,Results reported to 2050; 2051-2060 limits end-of-horizon effects
+social_discount_rate,0.10,fraction,MODELLER,B,Central; 6% and 14% sensitivities
+petrol_MJ_per_L,32.2,MJ/L,IPCC2006,A,LHV
+diesel_MJ_per_L,35.9,MJ/L,IPCC2006,A,LHV
+petrol_GJ_per_t,43.2,GJ/t,IPCC2006,A,
+diesel_GJ_per_t,43.0,GJ/t,IPCC2006,A,
+petrol_demand_2024_kt,1492.6,kt,KNBS_ES2025,A,Super petrol domestic demand 2024
+diesel_demand_2024_kt,2208.4,kt,KNBS_ES2025,A,Light diesel domestic demand 2024
+petrol_road_share,0.97,fraction,EPRA_PDP2025;MODELLER,B,
+diesel_road_share,0.84,fraction,EPRA_PDP2025;MODELLER,B,Road = 84% of petroleum demand (EPRA_PDP2025) applied to diesel
+ice_efficiency_gain_reference,0.005,per year,MODELLER,C,Autonomous fuel-economy improvement of the ICE fleet
+ice_efficiency_gain_standard,0.015,per year,GIZ_FES2025,C,Under the proposed fuel-economy standard (S1)
+fuel_tax_petrol_usd_per_L,0.58,USD/L,PD2026_FUEL;STAR2026_FUEL,C,~KES 75/L taxes and levies at KES 129/USD; ex-post fiscal indicator only
+fuel_tax_diesel_usd_per_L,0.50,USD/L,PD2026_FUEL;STAR2026_FUEL,C,~KES 65/L
+reserve_margin,1.25,ratio,PSM_V3,B,Firm capacity >= 1.25 x peak (PSM v3 / LCPDP planning criterion)
+voll_usd_per_kWh,3.6,USD/kWh,MODELLER,C,Value of lost load for the unserved-energy backstop
+reserve_shortfall_penalty_usd_per_kW_yr,400,USD/kW-yr,MODELLER,C,Penalty on firm-capacity shortfall (approx. 2.5x OCGT annuity)
+hvo_supply_cap_2050_PJ,25,PJ,MODELLER,C,Maximum renewable diesel supply in 2050 (biofuel scenario only)
+max_zev_newcap_growth,0.6,per year,MODELLER,C,Documentary only; diffusion governed by sales-share caps

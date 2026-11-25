@@ -1,0 +1,2 @@
+scenario,total_discounted_system_cost_MUSD,objective_MUSD,residual_fixed_cost_constant_MUSD,status,solve_s
+SEN_DEMAND_HIGH,175897,164775,11122.2,Optimal,139.2
