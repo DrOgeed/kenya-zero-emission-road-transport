@@ -75,9 +75,8 @@ def open_v2g(m: Model):
 def grid_constrained(m: Model):
     lim = {"BUILD_GEO": 0.07, "BUILD_VRE": 0.25, "BUILD_BESS": 0.10, "BUILD_DIST": 0.35, "BUILD_FIRM": 0.15}
     for u, v in lim.items():
-        for y in Y(m):
-            if int(y) >= 2025:   # from the first decision year (no pre-building)
-                m.set("UDCConstant", (R, u, y), v)
+        for y in Y(m):       # every year incl. 2024: no pre-building ahead of the limit
+            m.set("UDCConstant", (R, u, y), v)
     for y in Y(m):          # no imports beyond the committed 400 MW
         m.set("TotalAnnualMaxCapacity", (R, "IMPELC001", y), 0.4)
 
@@ -276,7 +275,7 @@ _add(Scenario("S4_ZE_SMART", "ZE 2050 - smart charging and swapping",
 _add(Scenario("S5_ZE_SMART_V2G", "ZE 2050 - smart charging + vehicle-to-grid",
               "S4 + bidirectional depot charging (bounded by parked fleet battery power).", "S4_ZE_SMART", [open_v2g]))
 _add(Scenario("S6_ZE_UNMANAGED_GRIDCAP", "ZE 2050 - unmanaged charging on a build-constrained grid",
-              "S3 + build limits from 2025: geothermal 70 MW/yr, wind+solar 250 MW/yr, batteries 100 MW/yr, "
+              "S3 + build limits in every year (2024-2060): geothermal 70 MW/yr, wind+solar 250 MW/yr, batteries 100 MW/yr, "
               "other firm plant (gas, hydro, nuclear, pumped hydro, bio) 150 MW/yr, distribution reinforcement "
               "350 MW/yr, imports held at 400 MW. Stress test for 'crippling the grid'.",
               "S3_ZE_UNMANAGED", [grid_constrained]))
@@ -302,7 +301,7 @@ _add(Scenario("S10_MARKET", "Market instruments without bans",
               "S0_REF", [carbon_price({2027: 30, 2040: 100, 2050: 150, 2060: 150}), green_finance, raise_zev_caps(0.5)]))
 
 # sensitivities on the central ZE pathway
-for sid, name, steps in [
+SENSITIVITIES = [
     ("SEN_BATT_LOW", "Low battery / ZEV cost (-20 %)", [scale_zev_capex(0.8, 0.8)]),
     ("SEN_BATT_HIGH", "High battery / ZEV cost (+25 %)", [scale_zev_capex(1.25, 1.25)]),
     ("SEN_DEMAND_HIGH", "High demand growth (+1 pp/yr)", [demand_growth_shift(0.01)]),
@@ -312,8 +311,14 @@ for sid, name, steps in [
     ("SEN_OIL_LOW", "Low oil price (x0.7)", [oil_price(0.7)]),
     ("SEN_DR06", "Social discount rate 6 %", [discount_rate(0.06)]),
     ("SEN_DR14", "Social discount rate 14 %", [discount_rate(0.14)]),
-]:
+]
+for sid, name, steps in SENSITIVITIES:
     _add(Scenario(sid, name, f"Sensitivity on S2_ZE: {name}.", "S2_ZE", steps, family="sensitivity"))
+# the same sensitivities on the reference, so that ZE-vs-reference cost
+# differences can be compared under identical assumptions
+for sid, name, steps in SENSITIVITIES:
+    _add(Scenario("REF" + sid[3:], f"Reference - {name}", f"Sensitivity on S0_REF: {name}.", "S0_REF", steps,
+                  family="sensitivity_ref"))
 
 
 def lineage(sid: str) -> list[str]:

@@ -1,2 +1,2 @@
 scenario,total_discounted_system_cost_MUSD,objective_MUSD,residual_fixed_cost_constant_MUSD,status,solve_s
-S6_ZE_UNMANAGED_GRIDCAP,272366,261243,11122.2,Optimal,150.7
+S6_ZE_UNMANAGED_GRIDCAP,244189,233067,11122.2,Optimal,155.7

@@ -12,9 +12,9 @@
  },
  {
   "scenario": "S6_ZE_UNMANAGED_GRIDCAP",
-  "muio_generated_objective": 261243.3046505232,
-  "python_pipeline_objective": 261243.30899513097,
-  "relative_difference": 1.6630503488517566e-08,
+  "muio_generated_objective": 233066.58806640733,
+  "python_pipeline_objective": 233066.59336582455,
+  "relative_difference": 2.273778124170251e-08,
   "rows_cols_muio": [
    248285,
    176067

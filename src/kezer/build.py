@@ -303,8 +303,12 @@ def build_power(m: Model, years: list[str], const: dict) -> None:
     m.set("OperationalLife", (R, "BACKSTOP"), 1)
     m.set("DiscountRateIdv", (R, "BACKSTOP"), 0.10)
     voll = const["voll_usd_per_kWh"] * 277.78  # M$/PJ
+    # unserved energy is booked at the end-use (distribution) level, so that it
+    # also absorbs shortfalls caused by a capped distribution network
+    m.drop("OutputActivityRatio", lambda k: k[1] == "BACKSTOP")
     for y in years:
         m.set("VariableCost", (R, "BACKSTOP", "1", y), voll)
+        m.set("OutputActivityRatio", (R, "BACKSTOP", "ELC003", "1", y), 1)
 
     # --- emissions factor units: PSM EAR in Mt/PJ (kept) ------------------------
     m.info["psm_param_tables"] = sorted(P)

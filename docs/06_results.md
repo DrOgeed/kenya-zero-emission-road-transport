@@ -46,13 +46,20 @@ The saving arises because battery-electric vehicles have lower lifetime cost tha
 * **Implication for EPRA.** The KES 8 off-peak e-mobility rate is right for today's geothermal-surplus nights. It will need dynamic or rotating windows once EVs dominate night load, otherwise it will create a "timer peak".
 * **Reserve reporting.** The 25 % reserve criterion is enforced at the evening peak slices. Night-time margins are reported ex post: 1.17 in S4 in 2050.
 
-**5. "Crippling the grid" is a build-rate risk, not an EV risk.** In S6, unmanaged charging on a grid limited to historical build rates:
+**5. "Crippling the grid" is a build-rate risk, not an EV risk.** S6 and S6B limit construction in every year from 2024 to historical rates (see docs/02):
 
-* the reserve margin falls below 1.0 around 2040 (0.87) and reaches 0.40 by 2050;
-* firm shortfall reaches 22 GW;
-* 42 TWh of demand goes unserved over 2024–2050.
+| | S6 unmanaged | S6B smart |
+|---|---|---|
+| First year reserve margin < 1.0 | 2039 | 2043 |
+| Reserve margin 2040 / 2045 / 2050 | 0.89 / 0.65 / 0.40 | 1.12 / 0.93 / 0.56 |
+| First year with unserved energy | 2041 | 2047 |
+| Unserved energy 2024–50 | 40.7 TWh | 31.6 TWh |
+| Firm shortfall in 2050 | 16.0 GW | 5.9 GW |
+| Unserved share of 2050 demand | ≈24 % | ≈24 % |
+| Power-sector CO2 in 2050 | 9.4 Mt (15.2 TWh gas) | 9.4 Mt |
+| Cumulative road CO2 2024–50 | 265 Mt | 246 Mt |
 
-With the same build limits, smart charging (S6B) keeps the margin at or above 1.05 until 2040 and delays shortages by about a decade. By 2050, though, the margin is 0.65, with 32 TWh unserved. **Demand management buys time; it cannot replace building.**
+Smart charging delays the failure by four to six years. By 2050 both cases shed about a quarter of demand, because the bans have electrified the whole fleet whatever the charging regime. Shortages also slow pre-ban electrification, so cumulative road CO2 is 57–65 Mt higher than in S3/S4, and gas plants inside the "other firm" allowance add 9.4 Mt of power-sector CO2 in 2050. **Demand management buys time; it cannot replace building.** Total costs (S6 US$244.2 bn, S6B US$232.9 bn) include unserved energy at VOLL and the reserve-shortfall penalty, so they measure welfare loss, not spending.
 
 The central smart pathway (S4) needs total capacity to grow from 3.2 GW (2024) to 25.8 GW (2050), about 0.9 GW a year, roughly 4–5 times Kenya's historical rate. By 2050 that is:
 
@@ -85,22 +92,26 @@ Kenyan cost data for heavy freight barely exist, so treat these results as explo
 
 **10. Vehicle-to-grid** (S5) saves a further US$0.9 bn. Parked depot fleets provide 7.7 GW of discharge capacity and displace 5 GW of stationary batteries.
 
-**11. Fiscal exposure.** Fuel taxes and levies of about US$2.3 bn a year in 2024 (≈KES 70–80/L) fall almost to zero by 2050 in every zero-emission scenario. In the reference they would be about US$2.7 bn a year. Kenya needs a replacement road-funding instrument, for example distance- or weight-based charges or an e-mobility levy, phased in from the 2030s.
+**11. Fiscal exposure.** Fuel taxes and levies of about US$2.3 bn a year in 2024 (≈KES 70–80/L) fall almost to zero by 2050 in every zero-emission scenario. In the reference they would be about US$2.7 bn a year. Cumulative 2024–2050 revenue is about US$42 bn under S2 against US$76 bn in the reference. Kenya needs a replacement road-funding instrument, for example distance- or weight-based charges or an e-mobility levy, phased in from the 2030s.
 
-## 6.3 Robustness (sensitivities on S2)
+## 6.3 Robustness (paired sensitivities)
 
-Zero emissions in 2050 are reached in every sensitivity.
+Each sensitivity was run on both S2 (`SEN_*`) and S0 (`REF_*`), so the saving from the zero-emission pathway is measured under identical assumptions. Zero road emissions in 2050 are reached in every case, and **the zero-emission pathway is cheaper than the reference under every sensitivity.**
 
-| Sensitivity | Total cost (bn US$) | Cum. road CO2 2024–50 (Mt) | Note |
-|---|---|---|---|
-| Central S2 | 151.5 | 189 | |
-| Battery/ZEV cost −20 % / +25 % | 142.1 / 161.1 | 158 / 220 | Faster or slower uptake before the bans |
-| Demand growth ±1 pp/yr | 131.4 / 175.9 | 173 / 206 | 2050 peak 9.5 / 16.0 GW |
-| Oil price ×0.7 / ×1.5 | 143.9 / 162.7 | 208 / 157 | |
-| Multi-year drought | 151.8 | 189 | +US$0.3 bn; no unserved energy. The geothermal-heavy mix is drought-robust. |
-| Discount rate 6 % / 14 % | 266.1 / 98.4 | 186 / 190 | Totals not comparable across rates |
+| Sensitivity | Reference (bn US$) | ZE-2050 (bn US$) | Saving | ZE cum. road CO2 2024–50 (Mt) | Note |
+|---|---|---|---|---|---|
+| Central | 158.6 | 151.5 | 7.1 | 189 | |
+| ZEV/battery cost −20 % | 155.0 | 142.1 | 12.9 | 158 | Faster uptake before the bans |
+| ZEV/battery cost +25 % | 162.4 | 161.1 | 1.3 | 220 | Saving nearly vanishes |
+| Demand growth +1 pp/yr | 184.2 | 175.9 | 8.3 | 206 | 2050 peak 16.0 GW (ZE) |
+| Demand growth −1 pp/yr | 137.3 | 131.4 | 5.9 | 173 | 2050 peak 9.5 GW (ZE) |
+| Multi-year drought | 158.8 | 151.8 | 7.0 | 189 | No unserved energy; geothermal-heavy mix is drought-robust |
+| Oil price ×1.5 | 176.3 | 162.7 | 13.6 | 157 | Reference retires 548k fossil vehicles early |
+| Oil price ×0.7 | 147.7 | 143.9 | 3.8 | 208 | |
+| Discount rate 6 % | 281.1 | 266.1 | 15.0 | 186 | Totals not comparable across rates |
+| Discount rate 14 % | 102.1 | 98.4 | 3.7 | 190 | |
 
-The sensitivities were run on S2 only. Cost differences against a reference under the *same* sensitivity are a natural next step: `python scripts/run_scenarios.py` with sensitivity layers on S0.
+The saving is most sensitive to vehicle and battery costs, oil prices and the discount rate.
 
 ## 6.4 Figures
 

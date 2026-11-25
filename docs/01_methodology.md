@@ -87,7 +87,7 @@ Changes, all documented in code and in `docs/generated/technology_list.md`:
    * wind −20 % by 2050;
    * batteries −45 % by 2050.
 4. **Battery storage priced as a 4-hour system.** PSM prices batteries per kW (US$800/kW) and lets energy capacity come free. In MUIO's standard storage block that would let the model buy firm reserve capacity with no energy behind it. Instead, the power block (BESS_TECH) is priced as a 4-hour system: US$300/kW power + 4 h × US$150/kWh = US$900/kW in 2024. Only extra energy beyond that is charged separately (BESS001, US$25/kWh). Battery cost learning follows NREL ATB 2024 and BNEF 2025.
-5. **Unserved energy.** The backstop is repriced as unserved energy at a VOLL of US$3.6/kWh.
+5. **Unserved energy.** The backstop is repriced as unserved energy at a VOLL of US$3.6/kWh and moved from generation level to the end-use electricity commodity (ELC003). Placed upstream, load shedding would still have to pass through the distribution network, so a network build limit could make the model infeasible instead of reporting unserved energy.
 6. **Reserve margin as two UDCs.** Firm capacity ≥ RM(y) × peak load, checked at two timeslices. RM is 1.05 in 2024–26 and rises linearly to PSM's 1.25 planning criterion by 2030. The starting value reflects Kenya's actual margin: modelled 2024 firm capacity is 2.49 GW, matching KPLC's ~2,495 MW firm capacity, against a 2.30 GW peak. Starting at 1.25 would force an instantaneous, unrealistic build in 2024. The two timeslices are:
    * the timeslice of the non-EV system peak;
    * the 19:00–21:00 bracket of the same season.

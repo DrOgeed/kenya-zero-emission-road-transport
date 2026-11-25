@@ -30,7 +30,7 @@ MUIO_SRC=/tmp/muio pytest -q
 
 ## Runtime
 
-Each 2024–2060 scenario has about 176,000 variables and 248,000 constraints. On one CPU core it takes about 35 s for matrix generation and 2.5–9 min to solve with HiGHS (interior point plus crossover). All 25 runs finish in about 1 hour on two cores. `results/run_log.csv` records status, objective, timing and matrix size for every run.
+Each 2024–2060 scenario has about 176,000 variables and 248,000 constraints. On one CPU core it takes about 35 s for matrix generation and 2.5–9 min to solve with HiGHS (interior point plus crossover). All 34 runs finish in about 1.5 hours on two cores. `results/run_log.csv` records status, objective, timing and matrix size for every run.
 
 ## Provenance chain
 

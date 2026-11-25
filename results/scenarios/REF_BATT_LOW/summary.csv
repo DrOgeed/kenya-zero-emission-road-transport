@@ -1,0 +1,2 @@
+scenario,total_discounted_system_cost_MUSD,objective_MUSD,residual_fixed_cost_constant_MUSD,status,solve_s
+REF_BATT_LOW,154972,143850,11122.2,Optimal,161.9

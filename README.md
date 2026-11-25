@@ -15,23 +15,25 @@ An open, fully documented **OSeMOSYS** energy-system model of Kenya. It tests wh
   * Vehicle-to-grid.
   * A reserve-margin constraint that sees EV load at the peak.
   * Annual reporting of peak demand, firm capacity, firm shortfall and unserved energy.
-* **25 scenarios.** Phased ICE bans; charging regimes; build-constrained vs accelerated grids; Avoid–Shift–Improve; three heavy-freight routes; market instruments without bans; nine sensitivities.
+* **34 runs.** 16 core scenarios (phased ICE bans; charging regimes; build-constrained vs accelerated grids; Avoid–Shift–Improve; three heavy-freight routes; market instruments without bans) and nine sensitivities, each run on both the zero-emission pathway and the reference.
 
 ## Headline results (2024–2050)
 
 | | Reference S0 | ZE bans S2 (TOU) | Unmanaged S3 | Smart S4 | Grid-capped + unmanaged S6 |
 |---|---|---|---|---|---|
 | Road CO2 in 2050 (Mt) | 11.9 | 0 | 0 | 0 | 0 |
-| Cumulative road CO2 2024–50 (Mt) | 338 | 189 | 208 | 181 | 262 |
-| EV charging 2050 (TWh) | 13.6 | 31.5 | 27.7 (+9.4 TWh H2) | 31.5 | 25.0 (+16.2 TWh H2) |
+| Cumulative road CO2 2024–50 (Mt) | 338 | 189 | 208 | 181 | 265 |
+| EV charging 2050 (TWh) | 13.6 | 31.5 | 27.7 (+9.4 TWh H2) | 31.5 | 31.5 (demand; part unserved) |
 | System peak 2050 (GW) | 10.4 | 12.3 | **17.6** | **11.5** | 18.8 |
-| Unserved energy 2024–50 (TWh) | 0 | 0 | 0 | 0 | **42** |
-| Total system cost 2024–60 (bn US$, disc. 10 %) | 158.6 | 151.5 | 157.4 | 150.2 | 272.4 |
-| Road fuel imports 2024–50 (bn US$) | 120 | 66 | 73 | 63 | 92 |
+| Unserved energy 2024–50 (TWh) | 0 | 0 | 0 | 0 | **41** |
+| Total system cost 2024–60 (bn US$, disc. 10 %) | 158.6 | 151.5 | 157.4 | 150.2 | 244.2* |
+| Road fuel imports 2024–50 (bn US$) | 120 | 66 | 73 | 63 | 93 |
 
-1. **Zero-emission road transport by 2050 is feasible and cheaper over the system's life than the reference** (−4.5 %). It cuts cumulative road CO2 by 44 % and halves fuel imports. The saving depends on removing the finance and supply barriers that the reference diffusion limits represent.
+\* Includes unserved energy at the value of lost load (US$3.6/kWh) and the reserve-shortfall penalty, so it measures welfare loss rather than spending.
+
+1. **Zero-emission road transport by 2050 is feasible and cheaper over the system's life than the reference** (−4.5 %, about −US$48/t CO2). It cuts cumulative road CO2 by 44 % and halves fuel imports. The saving holds in all nine paired sensitivities (US$1.3–15 bn), and depends on removing the finance and supply barriers that the reference diffusion limits represent.
 2. **Charging behaviour decides the grid outcome.** Unmanaged charging raises the 2050 peak to 17.6 GW. Smart charging holds it at 11.5 GW, saving about US$7 bn, including about US$17 bn less transmission and distribution investment.
-3. **The real threat is build rate.** At historical build rates (S6) the reserve margin collapses below 1.0 around 2040 and 42 TWh goes unserved. Smart charging delays this by about a decade but cannot prevent it. The smart pathway needs about 0.9 GW of new capacity every year, 4–5× the historical pace.
+3. **The real threat is build rate.** At historical build rates (S6) the reserve margin falls below 1.0 in 2039, load shedding starts in 2041 and 41 TWh goes unserved by 2050. Smart charging (S6B) delays this by four to six years but cannot prevent it; by 2050 both shed about a quarter of demand. The smart pathway needs about 0.9 GW of new capacity every year, 4–5× the historical pace.
 4. **Smart charging moves the peak to the night.** From the 2040s, night electricity costs more than evening electricity. Today's off-peak e-mobility tariff will need to become dynamic.
 5. **Without bans** (carbon price + green finance, S10), the fleet reaches 84 % zero-emission vehicles but not zero. **Avoid–Shift–Improve** (S8) is the cheapest zero-emission pathway. **Battery-electric trucks** beat hydrogen and renewable diesel at the assumed costs, but the heavy-freight evidence base is thin.
 6. **Fuel-tax revenue of about US$2.3 bn a year disappears by 2050.** Road funding needs a replacement instrument.
@@ -55,7 +57,7 @@ See [docs/06_results.md](docs/06_results.md) for the full results, figures and r
 ```bash
 sudo apt install glpk-utils          # glpsol builds the LP from the MUIO model file
 pip install -r requirements.txt
-python scripts/run_scenarios.py --jobs 2   # ~1 h for all 25 scenarios on 2 cores
+python scripts/run_scenarios.py --jobs 2   # ~1.5 h for all 34 runs on 2 cores
 python scripts/make_figures.py && python scripts/make_docs.py
 python scripts/export_muio.py              # rebuild the MUIO case
 pytest -q                                  # fast tests (add MUIO_SRC=... for the GUI-parity test)
@@ -63,7 +65,7 @@ pytest -q                                  # fast tests (add MUIO_SRC=... for th
 
 ## Verification
 
-* **GUI parity.** MUIO's own data-file generator (`generateDatafile` + `preprocessData`, imported from the MUIO v5.7 source) is run on the exported case. The result is solved with the unmodified MUIO model file and compared with the Python pipeline. They agree to 1–2 × 10⁻⁸ in objective, with identical matrix size, for S4 and S6 over the full 2024–2060 horizon. See [`muio/muio_verification.json`](muio/muio_verification.json). CI repeats this on a short horizon for every commit.
+* **GUI parity.** MUIO's own data-file generator (`generateDatafile` + `preprocessData`, imported from the MUIO v5.7 source) is run on the exported case. The result is solved with the unmodified MUIO model file and compared with the Python pipeline. They agree to 1–2.3 × 10⁻⁸ in objective, with identical matrix size, for S4 and S6 over the full 2024–2060 horizon. See [`muio/muio_verification.json`](muio/muio_verification.json). CI repeats this on a short horizon for every commit.
 * **Calibration.** 2024 bottom-up road fuel equals KNBS road petrol and diesel. Modelled 2024 peak (2.30 GW), generation (15.5 TWh) and firm capacity (2.49 GW) match EPRA and KPLC figures (2.32 GW, 14.5 TWh, ~2.50 GW).
 * **Provenance.** Every input value carries a `source_id` and an A/B/C confidence rating ([docs/generated/assumption_tables.md](docs/generated/assumption_tables.md)). The conflicts between sources and the choices made are logged in [docs/04](docs/04_limitations_and_data_gaps.md).
 

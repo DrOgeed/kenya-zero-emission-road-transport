@@ -96,7 +96,7 @@ def main():
     # 4 adequacy failures: unserved energy and firm shortfall
     fig, axs = plt.subplots(1, 2, figsize=(11, 4))
     lines(axs[0], ad, "YEAR", "unserved_energy_TWh", sel, "Unserved energy", "TWh per year")
-    lines(axs[1], ad, "YEAR", "reserve_shortfall_GW", sel, "Firm-capacity shortfall vs 25 % reserve", "GW")
+    lines(axs[1], ad, "YEAR", "reserve_shortfall_GW", sel, "Firm-capacity shortfall vs reserve requirement", "GW")
     axs[0].legend(loc="upper left", fontsize=8)
     save(fig, "fig04_adequacy_stress")
 
@@ -159,7 +159,7 @@ def main():
     base = sm.loc[sm.scenario == "S0_REF", "total_discounted_system_cost_MUSD"]
     if len(base):
         sm["delta_bn"] = (sm.total_discounted_system_cost_MUSD - base.iloc[0]) / 1000
-        sm = sm[~sm.scenario.str.startswith("SEN") & (sm.scenario != "S0_REF")].sort_values("delta_bn")
+        sm = sm[~sm.scenario.str.startswith(("SEN", "REF")) & (sm.scenario != "S0_REF")].sort_values("delta_bn")
         fig, ax = plt.subplots(figsize=(7.5, 5))
         ax.barh([LABEL.get(s, s) for s in sm.scenario], sm.delta_bn,
                 color=[PAL[0] if v >= 0 else PAL[2] for v in sm.delta_bn], height=0.6)
