@@ -12,7 +12,7 @@ jobs:
           python-version: "3.12"
       - name: Install GLPK (matrix generator) and Python dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y glpk-utils
+          sudo apt-get update && sudo apt-get install -y glpk-utils coinor-cbc
           pip install -r requirements.txt werkzeug pytest-github-actions-annotate-failures
       - name: Fetch MUIO v5.7 source for the GUI-parity test
         run: git clone --depth 1 --branch v5.7 https://github.com/OSeMOSYS/MUIO /tmp/muio

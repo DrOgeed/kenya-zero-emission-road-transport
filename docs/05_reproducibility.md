@@ -20,7 +20,7 @@ python scripts/make_docs.py                # docs/generated/*.md + results/headl
 python scripts/export_muio.py              # muio/KEZERT_MUIO_v5.7_case.zip
 ```
 
-Optional verification against MUIO's own data-file generator:
+Optional verification against MUIO's own data-file generator. MUIO's code checks that `glpsol` and `cbc` are installed (`apt install coinor-cbc`), even though only the data-file generator is used:
 
 ```bash
 git clone --depth 1 --branch v5.7 https://github.com/OSeMOSYS/MUIO /tmp/muio
