@@ -6,17 +6,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install GLPK (matrix generator) and Python dependencies
         run: |
           sudo apt-get update && sudo apt-get install -y glpk-utils
-          pip install -r requirements.txt werkzeug
+          pip install -r requirements.txt werkzeug pytest-github-actions-annotate-failures
       - name: Fetch MUIO v5.7 source for the GUI-parity test
         run: git clone --depth 1 --branch v5.7 https://github.com/OSeMOSYS/MUIO /tmp/muio
       - name: Run tests (short horizon, includes MUIO parity check)
         env:
           MUIO_SRC: /tmp/muio
-        run: pytest -q
+        run: |
+          glpsol --version | head -1
+          python -c "import highspy, pandas, numpy; print(pandas.__version__, numpy.__version__)"
+          pytest -q -rA --tb=short
